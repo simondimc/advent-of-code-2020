@@ -1,4 +1,6 @@
 
+# How many trees would you encounter following a slope?
+
 def main():
     f = open("input/day_3.txt", "r")
 
@@ -25,7 +27,7 @@ def traverse_slope(tree_map, right, down):
     while position["y"] < len(tree_map):
         if tree_map[position["y"]][position["x"]] == "#":
             trees += 1
-            
+
         position["x"] = (position["x"] + right) % len(tree_map[position["y"]])
         position["y"] += down
     
