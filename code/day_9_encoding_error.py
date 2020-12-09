@@ -37,6 +37,10 @@ def encryption_weakness(numbers):
 def contiguous_set(numbers, number):
     i = 0
     while i < len(numbers):
+        if numbers[i] == number:
+            i += 1
+            continue
+
         j = i
         c_set = []
         while sum(c_set) + numbers[i] < number:
