@@ -1,5 +1,7 @@
 import math
 
+# Figure out where the navigation instructions lead. What is the Manhattan distance between that location and the ship's starting position?
+
 def main():
     f = open("input/day_12.txt", "r")
 
